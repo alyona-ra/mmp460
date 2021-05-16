@@ -1,0 +1,41 @@
+main .wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 250px 30px 250px;
+}
+
+main .wrapper h1 {
+  text-align: center;
+  color: #002E3F;
+}
+
+main .wrapper:nth-child(2) {
+  background-color: #2b5769;
+  padding: 40px 400px 30px 400px;
+  color: white;
+}
+
+main .wrapper:nth-child(2) h1 {
+  color: white;
+}
+
+main .wrapper:nth-child(2) button {
+  background-color: #F8961D;
+}
+
+main .wrapper:nth-child(2) button:hover {
+  background-color: #F8BD4A;
+}
+
+main li a {
+  color: #F8BD4A;
+}

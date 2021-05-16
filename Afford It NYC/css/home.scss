@@ -1,0 +1,37 @@
+@import 'variables.scss';
+
+main {
+  .main-content-wrapper {
+    margin-top: 50px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+
+    .left-block {
+      display: flex;
+      flex-direction: column;
+      padding-left: 50px;
+      align-self: flex-start;
+
+      h1 {
+        color: $orange;
+      }
+
+      button {
+        margin-right: 0;
+        margin-left: auto;
+        margin-top: 20px;
+      }
+    }
+
+    .right-block {
+      padding-right: 30px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import 'variables.scss';
+
+main {
+    .wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 250px 30px 250px;
+
+        h1 {
+            text-align: center;
+            color: $dark-teal;
+        }
+
+        // p {
+        //     text-align: center;
+        // }
+
+        &:nth-child(2) {
+            background-color: $teal;
+            padding: 40px 400px 30px 400px;
+            color: white;
+            h1 {
+                color: white;
+            }
+
+            button {
+                background-color: $orange;
+
+                &:hover {
+                    background-color: $gold;
+                }
+            }
+        }
+    }
+
+    li {
+        a {
+            color: $gold;
+        }
+    }
+}

@@ -135,3 +135,94 @@ p {
   text-align: right;
   padding-right: 50px;
 }
+
+
+@media only screen and (max-width: 414px) {
+  main {
+    padding: 0 16px 0 16px;
+    margin-top: 20px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+
+    br {
+      display: none;
+    }
+  }
+  
+  .content {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+  }
+  
+  .problem {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  
+    img {
+      width: 100%;
+      align-self: center;
+    }
+  
+    .images-container {
+      flex-direction: column;
+    }
+  }
+  
+  .help-container {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+  
+    img {
+      width: 100%;
+      height: 100%;
+      align-self: center;
+    }
+  
+    .share-container {
+      margin-left: 0px;
+      margin-bottom: 30px;
+  
+      button {
+        margin-top: 10px;
+        width: 100px;
+      }
+  
+      p {
+        display: flex;
+        margin-top: 0;
+      }
+    }
+  }
+  
+  .about-us-block {
+    // row-gap: 100px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+  
+    .person-card {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 150px;
+    }
+  
+    .text-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    img {
+      height: 75%;
+    }
+  }
+}

@@ -32,3 +32,9 @@ button a, button a:visited {
 ul li {
   margin-top: 10px;
 }
+
+@media only screen and (max-width: 414px) {
+  ul li {
+    margin-top: 5px;
+  }
+}

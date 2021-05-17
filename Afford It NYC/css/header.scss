@@ -29,6 +29,8 @@ header {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      margin-top: 12px;
+
       p {
         width: fit-content;
         margin: 0 auto;
@@ -37,12 +39,13 @@ header {
 
       .project-name {
         font-family: "Roboto", sans-serif;
-        font-size: 1.3rem;
+        font-size: 2rem;
       }
 
       .tagline {
         font-style: italic;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
+        margin-top: -5px;
       }
     }
   }
@@ -64,9 +67,56 @@ header {
     }
 
     .current-page {
-      // color: $orange;
       font-family: "Roboto", sans-serif;
-      // pointer-events: none;
     }
   }
+}
+
+@media only screen and (max-width: 414px) {
+  header {
+    height: 70px;
+
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px 0 16px;
+  
+    .branding {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      
+      p {
+        margin-left: 0.5rem;
+      }
+  
+      .branding-text {
+        margin-top: 0;
+        
+        p {
+          margin-left: 0.5rem;
+        }
+  
+        .project-name {
+          font-size: 1.5rem;
+        }
+  
+        .tagline {
+          font-style: italic;
+          font-size: 0.7rem;
+        }
+      }
+    }
+  
+    .navigation {
+      margin-right: 0;
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      a {
+        margin-right: 10px;
+        margin-bottom: 3px;
+      }
+    }
+  }
+  
 }

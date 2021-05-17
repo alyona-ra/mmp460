@@ -41,3 +41,20 @@ main {
         }
     }
 }
+
+@media only screen and (max-width: 414px) {
+    main {
+        .wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 16px 30px 16px;
+    
+            &:nth-child(2) {
+                background-color: $teal;
+                padding: 20px 16px 30px 16px;
+            }
+        }
+    }
+}

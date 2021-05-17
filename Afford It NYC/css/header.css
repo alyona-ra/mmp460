@@ -49,6 +49,7 @@ header .branding .branding-text {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 12px;
 }
 
 header .branding .branding-text p {
@@ -61,12 +62,13 @@ header .branding .branding-text p {
 
 header .branding .branding-text .project-name {
   font-family: "Roboto", sans-serif;
-  font-size: 1.3rem;
+  font-size: 2rem;
 }
 
 header .branding .branding-text .tagline {
   font-style: italic;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
+  margin-top: -5px;
 }
 
 header .navigation a {
@@ -86,4 +88,57 @@ header .navigation a:hover {
 
 header .navigation .current-page {
   font-family: "Roboto", sans-serif;
+}
+
+@media only screen and (max-width: 414px) {
+  header {
+    height: 70px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 16px 0 16px;
+  }
+  header .branding {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .branding p {
+    margin-left: 0.5rem;
+  }
+  header .branding .branding-text {
+    margin-top: 0;
+  }
+  header .branding .branding-text p {
+    margin-left: 0.5rem;
+  }
+  header .branding .branding-text .project-name {
+    font-size: 1.5rem;
+  }
+  header .branding .branding-text .tagline {
+    font-style: italic;
+    font-size: 0.7rem;
+  }
+  header .navigation {
+    margin-right: 0;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .navigation a {
+    margin-right: 10px;
+    margin-bottom: 3px;
+  }
 }

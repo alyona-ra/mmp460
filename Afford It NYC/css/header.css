@@ -109,15 +109,13 @@ header .navigation .current-page {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  header .branding p {
-    margin-left: 0.5rem;
+    margin-left: -10px;
   }
   header .branding .branding-text {
-    margin-top: 0;
+    margin-top: 7px;
   }
   header .branding .branding-text p {
-    margin-left: 0.5rem;
+    margin-left: 0.2rem;
   }
   header .branding .branding-text .project-name {
     font-size: 1.5rem;
@@ -136,9 +134,10 @@ header .navigation .current-page {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 2px;
   }
   header .navigation a {
-    margin-right: 10px;
-    margin-bottom: 3px;
+    margin-right: 0px;
+    text-align: right;
   }
 }

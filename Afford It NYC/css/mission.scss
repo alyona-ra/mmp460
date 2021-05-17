@@ -27,7 +27,6 @@ p {
 
 .problem {
   display: flex;
-  // grid-template-columns: 1fr 1fr 1fr;
   flex-direction: column;
   justify-items: center;
   column-gap: 20px;
@@ -80,7 +79,6 @@ p {
 
 .about-us-block {
   display: grid;
-  // row-gap: 100px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 150px;
   width: 100%;
@@ -92,16 +90,10 @@ p {
     flex-direction: column;
     align-items: center;
     height: 150px;
-    // margin-left: 100px;
 
     p {
       text-align: center;
     }
-
-    // img {
-    //   margin: 0;
-    //   margin-left: 10px;
-    // }
   }
 
   .text-wrapper {
@@ -136,21 +128,46 @@ p {
   padding-right: 50px;
 }
 
+.modal {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+
+  img {
+    height: 90vh;
+    width: auto;
+    cursor: default;
+  }
+}
+
 
 @media only screen and (max-width: 414px) {
   main {
     padding: 0 16px 0 16px;
-    margin-top: 20px;
+    margin-top: 0px;
   }
   
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    margin-bottom: 0;
+    margin-top: 40px;
 
     br {
       display: none;
     }
   }
-  
+
+  p{
+    margin-bottom: 0;
+  }
+
   .content {
     margin-top: 0px;
     display: flex;
@@ -179,9 +196,8 @@ p {
     flex-direction: column-reverse;
   
     img {
-      width: 100%;
       height: 100%;
-      align-self: center;
+      width: 100%;
     }
   
     .share-container {
@@ -195,53 +211,39 @@ p {
   
       p {
         display: flex;
-        margin-top: 0;
+        margin-top: 20px;
       }
     }
   }
   
   .about-us-block {
-    // row-gap: 100px;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 50px;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
     width: 100%;
-    height: 400px;
-    justify-content: center;
+    height: 600px;
+    margin-top: 20px;
   
     .person-card {
       display: flex;
       flex-direction: row;
-      align-items: center;
-      height: 150px;
+      align-items: flex-end;
+      height: 120px;
     }
   
     .text-wrapper {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: baseline;
+      margin-left: 10px;
     }
   
     img {
-      height: 75%;
+      height: 100%;
     }
   }
-}
 
-.modal {
-  position: absolute;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.2s ease-out;
-  cursor: pointer;
-
-  img {
-    height: 90vh;
-    width: auto;
-    cursor: default;
+  .modal {
+    display: none;
   }
 }
